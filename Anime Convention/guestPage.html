@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>The Convention(Fanny Cao)</title>
+    <style>
+      #more{
+        display: none;
+      }
+      
+      #more2{
+        display: none;
+      }
+
+      #more3{
+        display: none;
+      }
+      
+      .header{
+          background-color: #f1f1f1;
+          padding: 20px;
+          text-align: center;
+        }
+  
+      .bar{
+        background-color: #333;
+        overflow: hidden;
+      }
+      .bar a{
+        display: block;
+        color: #f2f2f2;
+        padding: 10px 10px;
+        text-align: center;
+        float: left;
+        text-decoration: none;
+      }
+  
+      .row{
+        display:table;
+      }
+  
+      .column{
+        float: left;
+        width: 30%;
+        text-align: center;
+        padding: 5px;
+      }
+      
+      img{
+        height: auto;
+        width: 100%;
+      }
+
+      .guest{
+        text-align: center;
+      }
+      
+    </style>
+    
+    <script>
+      function initialize(){
+        show = false;
+        show2 = false;
+        show3 = false;
+      }
+
+      function moreInfo(){
+        buttonMessage = document.getElementById("button1");
+        info = document.getElementById("more");
+        if(show == false){
+          show = true;
+          info.style.display = "inline";
+          buttonMessage.innerHTML = "Read Less";
+        }
+        else{
+          show = false;
+          info.style.display = "none";
+          buttonMessage.innerHTML = "Read More";
+        }
+      }
+
+      function moreInfo2(){
+        buttonMessage = document.getElementById("button2");
+        info = document.getElementById("more2");
+        if(show2 == false){
+          show2 = true;
+          info.style.display = "inline";
+          buttonMessage.innerHTML = "Read Less";
+        }
+        else{
+          show2 = false;
+          info.style.display = "none";
+          buttonMessage.innerHTML = "Read More";
+        }
+      }
+
+      function moreInfo3(){
+        buttonMessage = document.getElementById("button3");
+        info = document.getElementById("more3");
+        if(show3 == false){
+          show3 = true;
+          info.style.display = "inline";
+          buttonMessage.innerHTML = "Read Less";
+        }
+        else{
+          show3 = false;
+          info.style.display = "none";
+          buttonMessage.innerHTML = "Read More";
+        }
+      }
+      
+    </script>
+  </head>
+  
+  <body onload = "initialize();">
+    <div class = "header">
+      <h1>Guests Speakers</h1>
+    </div>
+    
+    <div class = "bar">
+      <a href = "index.html">Go to Home Page</a>
+      <a href = "eventPage.html">Go to Events Page</a>
+    </div>
+
+    <div class = "guest">
+      <h2>Featured Guests</h2>
+    </div>
+    
+    <div class = "row">
+      <div class = "column">
+        <h3>Yoko Shimomura</h3>
+        <img src = "Yoko-Shimomura.jpeg">
+        <h4>Yoko Shimomura is a Japanese composer, most known for
+          her works in video games, including <em>Kingdom Heart</em> and 
+          <em>Final Fantasy XV</em>. <span id = "more"> 
+          <h4>Age: 54 <br> Birthday: October 19, 1967  <br> Nationality: Japanese</h4>
+          </span></h4>
+        <h5>Times <br> Friday: 1:30PM - 2:30PM</h5>
+        <div class = "learnMore">
+          <button onclick = "moreInfo()" id = "button1">Read More</button>
+        </div>
+      </div>
+      
+      <div class = "column">
+        <h3>Hayao Miyazaki</h3>
+        <img src = "hiyao-miyazaki.jpg">
+        <h4>Hayao Miyazaki is a renowned anime director and creater,
+          with some of his famous works being <em>My Neighbor Totoro</em>
+          and <em>Spirited Away</em>. <span id = "more2">
+          <h4>Age: 81 <br> Birthday: January 5, 1941  <br> Nationality: Japanese</h4>
+          </span>
+        </h4>
+        <h5>Times <br> Saturday: 10:30AM - 11:30AM</h5>
+        <div class = "learnMore">
+          <button onclick = "moreInfo2()" id = "button2"">Read More</button>
+        </div>
+      </div>
+      
+      <div class = "column">
+        <h3>Kazutaka Kodaka</h3>
+        <img src = "Kazutaka_Kodaka_Danganronpa.webp">
+        <h4>Kazutaka Kodaka is a Japanese video game designer. He is
+          the creater of the famous game and animation series, <em>Danganronpa</em>.
+          <span id = "more3">
+            <h4>Age: 44 <br> Birthday: July 8, 1978  <br> Nationality: Japanese</h4>
+          </span>
+        </h4>
+        <h5>Times <br> Sunday: 10:30AM - 11:30AM</h5>
+        <div class = "learnMore">
+          <button onclick = "moreInfo3()" id = "button3">Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class = "guest">
+      <h2>Secondary Guests</h2>
+    </div>
+    
+    <div class = "row">
+      <div class = "column">
+        <h3>Chris Patton</h3>
+        <img src = "ChrisPatton.jpg">
+        <h4>Chris Patton has been voice acting for 23 years in
+          companies such as Funimation, Bang Zoom, Sentai Filmworks, 
+          ADV Films and Okratron.</h4>
+        <h5>Booth #4</h5>
+      </div>  
+      
+      <div class = "column">
+        <h3>Max Mittelman</h3>
+        <img src = "Max-Mittelman.png">
+        <h4>Maxwell Braden Mittelman is an American voice actor 
+          who voices English versions of anime, 
+          animation and video games. One of his most notable characters
+          is Saitama from <em>One Punch Man</em>.</h4>
+        <h5>Booth #5</h5>
+      </div>
+
+      <div class = "column">
+        <h3>Saori Hayami</h3>
+        <img src = "Saori.jpg">
+        <h4>Saori Hayami has  played countless award-winning roles
+        and written themes songs for several anime that she acted in.</h4>
+        <h5>Booth #6</h5>
+      </div>
+    </div>  
+    
+  </body>
+
+</html>
